@@ -7,7 +7,6 @@ job('Aplicacion Node JS DSL') {
         }
     }
     triggers {
-        scm('H/7 * * * *')
         githubPush()
     }
     wrappers {
