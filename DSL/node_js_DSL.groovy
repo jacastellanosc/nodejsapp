@@ -13,7 +13,7 @@ job('Aplicacion Node JS DSL') {
         nodejs('nodejs')
     }
     steps {
-        shell('npm install')
+        shell('/usr/bin/npm install')
     }
     publishers {
         mailer('jacastellanosc@gmail.com', true, true)
