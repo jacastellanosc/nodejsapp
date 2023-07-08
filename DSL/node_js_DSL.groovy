@@ -14,6 +14,7 @@ job('Aplicacion Node JS DSL') {
         nodejs('nodejs')
     }
     steps {
+        shell('echo "Paso 1"')
         shell('/usr/bin/npm install')
     }
     publishers {
