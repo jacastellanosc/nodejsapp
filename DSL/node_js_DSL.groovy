@@ -14,7 +14,7 @@ job('Aplicacion Node JS DSL') {
     }
     steps {
         shell('echo "Paso 1"')
-        shell('/usr/bin/npm install')
+        shell('npm install')
     }
     publishers {
         mailer('jacastellanosc@gmail.com', true, true)
