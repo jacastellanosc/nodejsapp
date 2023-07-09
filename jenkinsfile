@@ -12,7 +12,7 @@ node {
         }
     }
     stage('Docker Build & Push') {
-        docker.withRegistry('https://registry.hub.docker.com', 'docker') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
             def nuestrapp = docker.build("clickasoft/nodejsapp:$(gitcommit)", ".")
             nuestrapp.push();
         }
